@@ -1,0 +1,26 @@
+{
+  "name": "compliance-engine-mcp-http",
+  "version": "3.0.0",
+  "description": "OAuth-protected MCP gateway (Streamable HTTP) for the Compliance Engine",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "dev": "node --env-file-if-exists=.env --watch src/index.js",
+    "smoke": "node smoke-test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "zod": "^3.23.8"
+  },
+  "keywords": [
+    "mcp",
+    "compliance",
+    "http"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}

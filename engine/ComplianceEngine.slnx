@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ComplianceEngine.csproj" />
+  <Project Path="ComplianceEngine.Tests/ComplianceEngine.Tests.csproj" />
+</Solution>
