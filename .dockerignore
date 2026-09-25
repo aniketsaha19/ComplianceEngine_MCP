@@ -1,0 +1,10 @@
+**/node_modules
+**/bin
+**/obj
+**/.data
+**/.env
+.git
+.vscode
+docs
+global.json
+mcp-server/smoke-test.mjs
