@@ -1,0 +1,69 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+**/*.dll
+**/*.pdb
+**/*.cache
+**/*.sourcelink.json
+
+# Visual Studio
+.vs/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Rider
+.idea/
+
+# Entity Framework
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*~
+*.bak
+
+# Test results
+TestResults/
+*.trx
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+# Docs
+docs/
+
+# Shell scripts
+*.sh
+
+# Markdown
+*.md
+
+# Claude Code session data / config
+.claude/
+.claude.json
+**/claude_desktop_config.json
+WORKING_CLAUDE_CONFIG.md
+
+# MCP gateway local state
+mcp-server/.data/
+mcp-server/.env
+
+# Build output (tracked by mistake earlier)
+engine/bin/
+engine/obj/
+engine/appsettings.Development.json
+node_modules/
+
+# EF migration script (regenerate with: dotnet ef migrations script --idempotent)
+migrate.sql
+
+# ...but the project README belongs in the repo
+!README.md
