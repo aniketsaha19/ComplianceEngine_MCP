@@ -34,16 +34,11 @@ jobs:
       - name: Build and push container image to registry
         uses: azure/container-apps-deploy-action@v2
         with:
-          appSourcePath: ${{ github.workspace }}
-          _dockerfilePathKey_: _dockerfilePath_
-          _targetLabelKey_: _targetLabel_
+          appSourcePath: ${{ github.workspace }}/engine
+          dockerfilePath: ${{ github.workspace }}/engine/Dockerfile
           registryUrl: rgcompliance1809.azurecr.io
           registryUsername: ${{ secrets.ENGINE_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.ENGINE_REGISTRY_PASSWORD }}
           containerAppName: engine
           resourceGroup: rg-compliance
           imageToBuild: rgcompliance1809.azurecr.io/engine:${{ github.sha }}
-          _buildArgumentsKey_: |
-            _buildArgumentsValues_
-
-
